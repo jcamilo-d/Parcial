@@ -58,19 +58,17 @@ public class llamadas {
                 +"3.Llamada Celular"+"\n"
                 +"\n"+"Seleccione la opcion del tipo de llamada"));
 
+
         if (op == 1) {
-            setDuracion(Integer.parseInt(JOptionPane.showInputDialog("Ingrese la duracion de la llamada (minutos)")));
             setCosto(60);
-            setCostoTotal(getCosto()*getDuracion());
         } else if (op == 2) {
-            setDuracion(Integer.parseInt(JOptionPane.showInputDialog("Ingrese la duracion de la llamada (minutos)")));
             setCosto(1200);
-            setCostoTotal(getCosto()*getDuracion());
         } else if (op == 3) {
-            setDuracion(Integer.parseInt(JOptionPane.showInputDialog("Ingrese la duracion de la llamada (minutos)")));
             setCosto(850);
-            setCostoTotal(getCosto()*getDuracion());
         }
+        setDuracion(Integer.parseInt(JOptionPane.showInputDialog("Ingrese la duracion de la llamada (minutos)")));
+        setCostoTotal(getCosto()*getDuracion());
+
     }
 
 }
